@@ -1,0 +1,82 @@
+
+
+
+/*Developers*/
+
+.dev
+{
+	text-align:center;
+	color:#111;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	background-attachment:fixed;
+}
+	
+.left-well
+{
+	background:#4286f4;
+	margin:0px -15px;
+	padding:120px 0px;
+	background-size:100%;
+	
+}
+.middle-well
+{
+	background:#41454c;
+	margin:0px -15px;
+	padding:120px 0px;
+	background-size:100%;
+}
+.right-well
+{
+	background:#f44a41;
+	margin:0px -15px;
+	padding:120px 0px;
+	background-size:100%;
+}
+
+.left-well a:hover
+{
+	padding:60px 0px 180px;
+}
+
+.sociallink a:hover 
+{
+	padding-top : 10px;
+	padding-bottom:20px;
+}
+
+.pawan
+{
+	background:#41454c;
+	padding:100px 0px;
+	background-size:100%;
+	text-align:center;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+}
+
+.pawan-body{
+	border:2px solid black;
+	border-radius:10px;
+	padding:50px,0px;
+	text-align:center;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+}
+	
+
+.aquib
+{
+	background:#4286f4;
+	padding:100px 0px;
+	background-size:100%;
+	text-align:center;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+}
+.roshan
+{
+	background:#f44a41;
+	padding:100px 0px;
+	background-size:100%;
+	text-align:center;
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+}
+

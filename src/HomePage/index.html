@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <meta name="description" content="Responsive Websites Using BootStrap - demo page">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Welcome To Online Recruitment System</title>
+
+    <!-- css stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" language="JavaScript">
+  function set_body_width() { // set body height = window height
+    var wh = $(window).width();
+    $(".imgFitWindowResize").width(wh);
+  }
+  $(document).ready(function() {
+    set_body_width();
+    $(window).bind('resize', function() { set_body_width(); });
+  });
+</script>
+<style>  .bx-wrapper img{height: 100; background-position: center; background-size: cover;}
+.bg-dark{
+  background-color:darkgray;
+  padding:50px 0px;
+  color:white;
+}
+.carousel {
+    height: 500px;
+}
+.carousel-caption {
+	height:400px;
+}
+.carousel .item {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 500px;
+}
+.mynav
+{
+	padding : 50px 0px;
+}
+
+ul.dropdown-menu{
+    background: gray;
+}
+</style>
+</head>
+<body>
+
+    <!-- modal box -->
+    <div class="modal fade" id="my-modal-box" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-title" id="my-modal-box-l">
+              <h3>Share it</h3>
+            </div>
+          </div><!-- /.modal-header -->
+          <div class="modal-body">
+            <p>Share it box content</p>
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dbfb1915f17d240"></script>
+          </div><!-- /.modal-body -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- fixed navigation bar -->
+	
+    <div class="navbar navbar-fixed-top navbar-inverse"  role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a  class="navbar-brand" href="index.html">Online Campus Recuitment</a>
+        </div>
+        <div class="collapse navbar-collapse" id="b-menu-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li style="padding:0px 5px;"><a href="index.html">Home</a></li>
+            <li style="padding:0px 5px;"><a href="../developers/developers.php">Developers</a></li>
+            <li style="padding:0px 5px;"><a href="#">Contact Us</a></li>
+            <li style="padding:0px 5px;" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign Up <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="..\Student\register.php"><p class = "blk">Student</p></a></li>
+                <li><a href="..\Company\register.php"><p class = "blk">Company</p></a></li>
+              </ul>
+            </li>
+			<li style="padding:0px 5px;" class="dropdown">
+			        <?php?>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Log In <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="..\logins\slogin.php">Student</a></li>
+                <li><a href="..\logins\clogin.php">Company</a></li>
+                <li><a href="..\logins\alogin.php">Administrator</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- /.nav-collapse -->
+      </div> <!-- /.container -->
+    </div> <!-- /.navbar -->
+
+    <!-- slider --> style="padding-bottom:100px"
+    <div id="slider" class="carousel slide" data-ride="carousel">
+      <!-- controls -->
+      <div class="carousel-inner">
+        <!-- slides -->
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption" >
+              <p><a class="btn btn-lg btn-default" href="http://www.mnit.ac.in" role="button"><img src = "slide\placements-2.jpg" id="imgFitWindowResize" style = "height : 300px;width : 500px;" ></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="http://www.mnit.ac.in" role="button"><img src = "slide\MNITPB.jpg" id="imgFitWindowResize" style = "height : 300px;width : 500px;" ></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-warning" href="http://www.mnit.ac.in/academics/convocation.php" role="button"><img src = "slide\MNITJC.gif" id="imgFitWindowResize" style = "height : 300px;width : 500px;" ></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- left-right controls -->
+      <a class="left carousel-control" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; MNIT@online campus recruitment system</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- add javascripts -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
