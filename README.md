@@ -41,4 +41,4 @@
 
 4. Start the server and browse to your localhost
 
-5. Voila your setup is complete.
+5. Voila you are all setup.
