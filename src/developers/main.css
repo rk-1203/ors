@@ -10,6 +10,22 @@
 	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
 	background-attachment:fixed;
 }
+
+.dev .col-xs-12 {
+	padding: 0;
+}
+
+.dev .col-xs-12 table{
+	margin: 0;
+}
+
+.dev .col-xs-12 table thead th{
+	border-bottom: 0;
+}
+
+.dev .col-xs-12 table tbody tr:first-child td { 
+	border-top: 0;
+}
 	
 .left-well
 {
@@ -80,3 +96,12 @@
 	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
 }
 
+.contact {
+	padding: 4px;
+	border-top: 1px solid #ddd;
+	text-transform: uppercase;
+}
+
+.contact a {
+	color: #e6b733;
+}
